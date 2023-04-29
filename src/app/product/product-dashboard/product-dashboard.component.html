@@ -1,0 +1,12 @@
+<header class="bg-primary p-3 text-white">
+    <h1>Product Service</h1>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <app-product-form></app-product-form>
+            <app-product-card [proObj]="prod" *ngFor="let prod of productArray"></app-product-card>
+        </div>
+    </div>
+</div>
